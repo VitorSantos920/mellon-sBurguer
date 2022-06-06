@@ -7,10 +7,90 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mellon's Burguer</title>
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
     </head>
 
     <body>
-        
-    </body>
+
+        <header class="header">
+            <a href="./index.html" class="logo">Bem vindo!</a>
+            <nav class="menu">
+                <ul class="menu-itens">
+                    <li class="item"><a href="">Início</a></li>
+                    <li class="item"><a href="">Sobre</a></li>
+                    <li class="item"><a href="">Menu</a></li>
+                    <li class="item"><a href="">Serviços</a></li>
+                    <li class="item"><a href="">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="home">
+                <div class="home-content-left">
+                    <h1 class="main-title">Mellon's <br> Burguer</h1>
+                    <h2 class="subtitle">Lanches <br> com gosto de quero <br> mais!</h2>
+                    <a href="#cardapio"><button class="btn">Menu de Hoje</button></a>
+                </div>
     
+                <div class="home-content-right">
+                    <img src="./assets/img/mainImage.png" class="mainImage" alt="Imagem Principal de Introdução">
+                </div>
+            </section>
+    
+            <section class="about">
+                <div class="about-content-left">
+                    <img src="./assets/img/secundaryImage.png" class="imgAbout" alt="Imagem de Sobre nós">
+                </div>
+    
+                <div class="about-content-right">
+                    <header class="header-about">
+                        <h4 class="titleAbout">Sobre nós</h4>
+                        <h2 class="subtitle">Trabalhamos com os
+                            melhores ingredientes</h2>
+                    </header>
+                    <p class="descAbout">Empresa que já está no ramo desde 2022, começando com delivery e logo estaremos com nossa loja física.</p>
+                    <a href=""><button class="btn">Saiba mais...</button></a>
+                </div>
+            </section>
+    
+            <section class="cardapio">
+                <header class="header-cardapio" id="cardapio">
+                    <h4 class="titleCardapio">Nosso Cardápio</h4>
+                    <h2 class="subtitle">Venha saborear nossos lanches com ótimos preços
+                </h2>
+                </header>
+    
+                <main class="main-cardapio">
+                    <div class="card">
+                        <box-icon class='bx bx-cart-alt'></box-icon>
+                        <img src="./assets/img/burguer1.png" class="img-cardapio" alt="Imagem do Hambúrguer de Frango">
+                        
+                        <h3>Hambúrguer de <br> frango</h3>
+                        <p>150g de frango grelhado com nosso molho especial</p>
+                        <p class="preco">R$ 15,00</p>
+                    </div>
+    
+                    <div class="card">
+                        <box-icon class='bx bx-cart-alt'></box-icon>
+                         <img src="./assets/img/burguer2.png" class="img-cardapio" alt="Imagem do Hambúrguer Especial da Casa">               
+                         <h3>Hambúrguer <br> especial da casa</h3>
+                         <p>150g de picanha com nosso molho especial</p>
+                         <p class="preco">R$ 20.00</p>
+                    </div>
+    
+                    <div class="card">
+                        <box-icon class='bx bx-cart-alt'></box-icon>
+                        <img src="./assets/img/pctFrango.png" class="img-cardapio" alt="Imagem do Pacote de Frango Frito Crocante">
+                        <h3>Pacote de Frango Frito Crocante</h3>
+                        <p>200g de frango frito feito em 5 minutos</p>
+                        <p class="preco">R$ 25.00</p>
+                    </div>
+                </main>
+    
+            </section>
+        </main>
+    </body>
 </html>
