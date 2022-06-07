@@ -31,13 +31,13 @@ body, .service {background-color: var(--bgColor) !important;}
 /* FLEX */
 .header, .menu-itens, .home, .about, 
 .cardapio, .main-cardapio, .main-services, 
-.cardItem, .pedido, .pedido-content {
+.cardItem, .pedido, .pedido-content, .footer {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.home, .about, .main-cardapio, .main-services {flex-wrap: wrap;}
+.home, .about, .main-cardapio, .main-services, .footer {flex-wrap: wrap;}
 
 .cardapio, .cardItem, .pedido-content {flex-direction: column;}
 
@@ -194,7 +194,7 @@ a:hover {color: var(--mainColor);}
 /* Fim Cardapio */
 
 /* Services Styles */
-.services {padding: 22vh 0;}
+.services, .footer {padding: 25vh 0;}
 
 .img-services {
     width: 90px;
@@ -219,3 +219,25 @@ a:hover {color: var(--mainColor);}
 }
 
 .titlePedido {font-size: 32px;}
+/* Fim Pedido */
+
+/* Footer Styles  */
+.footer {gap: 80px;}
+
+.links {height: 279px;}
+
+.titleFooter {color: var(--secundaryColor);}
+
+.risco {
+    border-bottom: 3px solid darkorange;
+    width: 60px;
+    margin-top: 10px;
+}
+
+.linksFooter ul li {transition: 0.5s; margin: 15px 0;} 
+
+.linksFooter ul a {color: #9897a9;}
+
+.linksFooter ul a:hover {color: white;}
+
+.linksFooter ul li:hover {transform: translateX(-12px);}
