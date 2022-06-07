@@ -18,9 +18,7 @@
     --radius: 0.5rem;
 }
 
-body, .service {
-    background-color: var(--bgColor) !important;
-}
+body, .service {background-color: var(--bgColor) !important;}
 
 ::selection {
     background-color: var(--mainColor);
@@ -30,17 +28,27 @@ body, .service {
 ::-webkit-scrollbar {display: none;}
 /* Fim General */
 
-/* Header Styles */
-.header {
+/* FLEX */
+.header, .menu-itens, .home, .about, 
+.cardapio, .main-cardapio, .main-services, 
+.cardItem, .pedido, .pedido-content {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.home, .about, .main-cardapio, .main-services {flex-wrap: wrap;}
+
+.cardapio, .cardItem, .pedido-content {flex-direction: column;}
+
+/* Header Styles */
+.header {
     justify-content: space-between;
     width: 100vw;
-    height: 14vh;
     padding: 0 52px;
     position: fixed;
-    background-color: var(--bgColor);
     z-index: 1000;
+    background-color: var(--bgColor);
 }
 
 a.logo {
@@ -51,7 +59,6 @@ a.logo {
 
 .menu-itens {
     list-style-type: none;
-    display: flex;
     gap: 40px;
 }
 
@@ -61,55 +68,46 @@ a {
     transition: 0.8s;
 }
 
-a:hover {
-    color: var(--mainColor);
-}
+a:hover {color: var(--mainColor);}
 /* Fim Header */
 
 /* Home Styles */
 .home {
     padding-top: 20vh;
-    display: flex;
     width: 100vw;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
 .home-content-left {
-    height: 421px;
     width: 420px;
+    height: 421px;
 }
 
 .main-title {
-    color: var(--mainColor);
     font-size: 56px;
+    color: var(--mainColor);
 }
 
 .subtitle {
     font-size: 32px;
-    color: var(--secundaryColor);
     margin: 10px 0;
+    color: var(--secundaryColor);
 }
 
 .btn {
     width: 147px;
     height: 45px;
-    border-radius: var(--radius);
-    border: none;
     font-size: 16px;
     font-weight: 500;
     margin-top: 15px;
     cursor: pointer;
-    transition: 0.5s;
+    border: none;
+    border-radius: var(--radius);
     color: var(--secundaryColor);
     background-color: var(--mainColor);
+    transition: 0.5s;
 }
 
-.btn:hover, .cardItem:hover{
-    transform: scale(1.1);
-}
+.btn:hover, .cardItem:hover{transform: scale(1.1);}
 
 .mainImage {
     width: 420px;
@@ -119,10 +117,6 @@ a:hover {
 
 /* About Styles */
 .about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
     padding: 15vh 0;
 }
@@ -132,9 +126,7 @@ a:hover {
     width: 420px;
 }
 
-.about-content-left {
-    padding: 15px;
-}
+.about-content-left {padding: 15px;}
 
 .about-content-right{width: 468px;}
 
@@ -144,50 +136,34 @@ a:hover {
 }
 
 .descAbout{
-    color: var(--secundaryColor);
-    font-size: 16px;
     width: 440px;
+    font-size: 16px;
     margin: 10px 0;
+    color: var(--secundaryColor);
 }
 /* Fim About  */
 
 /* Cardapio Styles */
-.cardapio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
 
-.header-cardapio, .header-services {
-    text-align: center;
-}
+.header-cardapio, .header-services {text-align: center;}
 
 .titleCardapio, .titleServices {font-size: 27px;}
 
 .main-cardapio, .main-services {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 100vw;
     gap: 20px;
     padding: 20px 0;
-    width: 100vw;
 }
 
 .cardItem {
-    position: relative;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
     justify-content: space-around;
+    position: relative;
+    text-align: center;
     padding: 25px;
     width: 260px;
     height: 400px;
     border-radius: var(--radius);
     background-color: #FEEEE7;
-    overflow: hidden;
     transition: 1s;
 }
 
@@ -195,17 +171,15 @@ a:hover {
     position: absolute;
     top: 0;
     right: 0;
-    display: flex;
-    align-items: center;
-    background-color: var(--mainColor);
-    border-radius: 0 10px 0 10px;
-    color: var(--secundaryColor);
-    border: none;
+    width: 40px;
+    height: 30px;
     font-size: 20px;
     font-weight: bolder;
     padding-top: 4px;
-    width: 40px;
-    height: 30px;
+    border: none;
+    border-radius: 0 10px 0 10px;
+    background-color: var(--mainColor);
+    color: var(--secundaryColor);
 }
 
 .img-cardapio {
@@ -214,21 +188,34 @@ a:hover {
 }
 
 .preco, .service h3 {
-    color: var(--mainColor);
     font-weight: bolder;
+    color: var(--mainColor);
 }
 /* Fim Cardapio */
 
 /* Services Styles */
-.services {
-    padding: 22vh 0;
-}
+.services {padding: 22vh 0;}
 
 .img-services {
     width: 90px;
     height: 90px;
 }
 
-.service {color: var(--secundaryColor);
+.service {
+    color: var(--secundaryColor);
     height: 265px;
 }
+/* Fim Services */
+
+/* Pedido Styles */
+.pedido-content {
+    width: 70vw;
+    height: 253px;
+    gap: 20px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: var(--radius);
+    background-color: #FEEEE7;
+}
+
+.titlePedido {font-size: 32px;}
