@@ -10,6 +10,7 @@
         <meta name="author" content="Vitor Hugo Pires dos Santos">
         <title>Mellon's Burguer</title>
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     </head>
 
     <body>
@@ -17,10 +18,10 @@
             <a href="./index.html" class="logo">Bem vindo!</a>
             <nav class="menu">
                 <ul class="menu-itens">
-                    <li class="item"><a href="">Início</a></li>
-                    <li class="item"><a href="">Sobre</a></li>
-                    <li class="item"><a href="">Menu</a></li>
-                    <li class="item"><a href="">Serviços</a></li>
+                    <li class="item"><a href="index.html">Início</a></li>
+                    <li class="item"><a href="#about">Sobre</a></li>
+                    <li class="item"><a href="#cardapio">Menu</a></li>
+                    <li class="item"><a href="#services">Serviços</a></li>
                     <li class="item"><a href="">Contato</a></li>
                 </ul>
             </nav>
@@ -39,14 +40,14 @@
                 </div>
             </section>
     
-            <section class="about">
+            <section class="about" id="about">
                 <div class="about-content-left">
                     <img src="./assets/img/secundaryImage.png" class="imgAbout" alt="Imagem de Sobre nós">
                 </div>
     
                 <div class="about-content-right">
                     <header class="header-about">
-                        <h4 class="titleAbout">Sobre nós</h4>
+                        <h3 class="titleAbout">Sobre nós</h3>
                         <h2 class="subtitle">Trabalhamos com os
                             melhores ingredientes</h2>
                     </header>
@@ -55,22 +56,24 @@
                 </div>
             </section>
     
-            <section class="cardapio">
+            <section class="cardapio" id="cardapio">
                 <header class="header-cardapio" id="cardapio">
-                    <h4 class="titleCardapio">Nosso Cardápio</h4>
+                    <h3 class="titleCardapio">Nosso Cardápio</h3>
                     <h2 class="subtitle">Venha saborear nossos lanches com ótimos preços</h2>
                 </header>
     
                 <main class="main-cardapio">
                     <div class="cardItem">
+                        <box-icon class="bx bx-cart-alt"></box-icon>
                         <img src="./assets/img/burguer1.png" class="img-cardapio" alt="Imagem do Hambúrguer de Frango">
                         
-                        <h3>Hambúrguer de <br> frango</h3>
+                        <h3>Hambúrguer de <br> frango</h4>
                         <p>150g de frango grelhado com nosso molho especial</p>
                         <p class="preco">R$ 15.00</p>
                     </div>
     
                     <div class="cardItem">
+                        <box-icon class="bx bx-cart-alt"></box-icon>
                          <img src="./assets/img/burguer2.png" class="img-cardapio" alt="Imagem do Hambúrguer Especial da Casa">               
                          <h3>Hambúrguer <br> especial da casa</h3>
                          <p>150g de picanha com nosso molho especial</p>
@@ -78,6 +81,7 @@
                     </div>
     
                     <div class="cardItem">
+                        <box-icon class="bx bx-cart-alt"></box-icon>
                         <img src="./assets/img/pctFrango.png" class="img-cardapio" alt="Imagem do Pacote de Frango Frito Crocante">
                         <h3>Pacote de Frango Frito Crocante</h3>
                         <p>200g de frango frito feito em 5 minutos</p>
@@ -86,6 +90,33 @@
                 </main>
             </section>
 
+            <section class="services" id="services">
+                <header class="header-services">
+                    <h4 class="titleServices">Nossos Serviços</h4>
+                    <h2 class="subtitle">Alguns tópicos para saber mais sobre a lanchonete
+                    </h2>
+                </header>
+                <main class="main-services">
+                    <div class="cardItem service">
+                        <img src="./assets/img/box.png" alt="" class="img-services">
+                        <h3>Ordem</h3>
+                        <p class="descServices">Temos a responsabilidade de agradar nossos clientes com os nossos lanches.</p>
+                    </div>
+
+                    <div class="cardItem service">
+                        <img src="./assets/img/truck.png" alt="" class="img-services">
+                        <h3>Fornecedores</h3>
+                        <p class="descServices">Produtos selecionados para melhor servi-lo.</p>
+                    </div>
+
+                    <div class="cardItem service">
+                        <img src="./assets/img/card.png" alt="" class="img-services">
+                        <h3>Delivery</h3>
+                        <p class="descServices">Você pode pedir nossa comida através do nosso sistema de delivery se preferir. <br> Bon appétit!</p>
+                    </div>
+
+                </main>
+            </section>
         </main>
     </body>
 </html>
