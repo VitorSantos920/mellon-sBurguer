@@ -136,14 +136,13 @@ a:hover {color: var(--mainColor);}
 }
 
 .descAbout{
-    width: 440px;
     font-size: 16px;
     margin: 10px 0;
     color: var(--secundaryColor);
 }
 /* Fim About  */
 
-/* Cardapio Styles */
+/* Cardapio / Services Styles */
 
 .header-cardapio, .header-services {text-align: center;}
 
@@ -156,7 +155,6 @@ a:hover {color: var(--mainColor);}
 }
 
 .cardItem {
-    justify-content: space-around;
     position: relative;
     text-align: center;
     padding: 25px;
@@ -293,3 +291,27 @@ a:hover {color: var(--mainColor);}
     }
 } 
 
+@media only screen and (max-width: 539px) {
+    .cardItem {
+        width: 400px;
+        height: 450px;
+        gap: 20px;
+    }
+
+    .cardItem h3 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .cardItem p {font-size: 22px;}
+
+    .bx {
+        font-size: 40px;
+        height: 50px;
+        width: 65px;
+    }
+
+    .header-services {
+        padding: 0 50px;
+    }
+} 
