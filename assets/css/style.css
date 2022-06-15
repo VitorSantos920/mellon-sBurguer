@@ -186,7 +186,7 @@ a:hover {color: var(--mainColor);}
     width: 200px;
     height: 200px;
 }
-
+/*  */
 .preco, .service h3 {
     font-weight: bolder;
     color: var(--mainColor);
@@ -241,3 +241,12 @@ a:hover {color: var(--mainColor);}
 .linksFooter ul a:hover {color: white;}
 
 .linksFooter ul li:hover {transform: translateX(-12px);}
+/*  Fim Footer */
+
+/* Responsive Settings */
+
+@media only screen and (max-width: 800px) {
+    .header {
+        flex-direction: column;
+    }
+} 
