@@ -22,13 +22,13 @@ body, .service {background-color: var(--bgColor) !important;}
 
 ::selection {
     background-color: var(--mainColor);
-    color: white;
+    color: var(--secundaryColor);
 }
 
 ::-webkit-scrollbar {display: none;}
 /* Fim General */
 
-/* FLEX */
+/* Flex Global */
 .header, .menu-itens, .home, .about, 
 .cardapio, .main-cardapio, .main-services, 
 .cardItem, .pedido, .pedido-content, .footer {
@@ -40,6 +40,7 @@ body, .service {background-color: var(--bgColor) !important;}
 .home, .main-cardapio, .main-services, .footer {flex-wrap: wrap;}
 
 .cardapio, .cardItem, .pedido-content {flex-direction: column;}
+/*  Fim Flex Global */
 
 /* Header Styles */
 .header {
@@ -161,7 +162,7 @@ a:hover {color: var(--mainColor);}
     width: 260px;
     height: 400px;
     border-radius: var(--radius);
-    background-color: #FEEEE7;
+    background-color: var(--secundaryColor);
     transition: 1s;
 }
 
@@ -211,9 +212,8 @@ a:hover {color: var(--mainColor);}
     height: 253px;
     gap: 20px;
     text-align: center;
-    border: 1px solid white;
     border-radius: var(--radius);
-    background-color: #FEEEE7;
+    background-color: var(--secundaryColor);
 }
 
 .titlePedido {font-size: 32px;}
@@ -236,7 +236,7 @@ a:hover {color: var(--mainColor);}
 
 .linksFooter ul a {color: #9897a9;}
 
-.linksFooter ul a:hover {color: white;}
+.linksFooter ul a:hover {color: var(--secundaryColor);}
 
 .linksFooter ul li:hover {transform: translateX(-12px);}
 /*  Fim Footer */
@@ -313,5 +313,19 @@ a:hover {color: var(--mainColor);}
 
     .header-services {
         padding: 0 50px;
+    }
+} 
+
+@media only screen and (max-width: 470px) {
+    .header {
+        text-align: center;
+    }
+
+    .menu-itens {
+        flex-wrap: wrap;
+    }
+
+    .header a {
+        width: 100%;
     }
 } 
